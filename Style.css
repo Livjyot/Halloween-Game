@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#story1,
+#story2,
+#story3,
+#story4 {
+  display: none;
+}
+#task3,
+#task4 {
+  display: none;
+}
+
+.task {
+  color: red;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+#resultTwo1,
+#resultTwo2,
+#resultTwo3,
+#resultTwo4,
+#resultTwo5,
+#resultTwo6,
+#resultTwo7,
+#resultTwo8 {
+  display: none;
+}
+#response1,
+#response3,
+#response2,
+#response4,
+#response5 {
+  display: none;
+}
+
+/* story 2 css  */
+/* #rsTask1,
+#rsTask2, */
+#rsTask3,
+#rsTask4,
+#rsTask5,
+#rsTask6,
+#rsTask7,
+#rsTask8 {
+  display: none;
+}
+
+/* Story 3 css */
+
+#resultThree1,
+#resultThree2,
+#resultThree3,
+#resultThree4 {
+  display: none;
+}
+
+/* #rs3Task1,
+#rs3Task2, */
+#rs3Task3,
+#rs3Task4 {
+  display: none;
+}
+
+/* Story 4 css */
+#resultFour1,
+#resultFour2,
+#resultFour3,
+#resultFour4,
+#resultFour5,
+#resultFour6 {
+  display: none;
+}
+#rs4Task3,
+#rs4Task4,
+#rs4Task5,
+#rs4Task6 {
+  display: none;
+}
+
+#holloween_bg {
+  background-image: url("./Images/5.jpg");
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#holloween_bg .game_content {
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  width: 80%;
+  height: 550px !important;
+  overflow: scroll;
+}
+#holloween_bg .game_content::-webkit-scrollbar {
+  display: none;
+}
+
+#holloween_bg .game_content h2 {
+  color: rgb(248, 233, 25);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.game_imp {
+  position: absolute;
+  bottom: 0;
+  right: 33%;
+}
+.path {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto !important;
+  display: none;
+}
+.boy {
+  display: none;
+  justify-content: center;
+  animation: mymove 5s infinite;
+}
+.boy img {
+  width: 150px;
+}
+@keyframes mymove {
+  0% {
+    margin-bottom: 0px;
+  }
+  25% {
+    margin-bottom: 10px;
+  }
+  75% {
+    margin-bottom: 15px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
+}
+.path button {
+  margin: 50px 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: rgb(192, 9, 9);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid rgb(192, 9, 9);
+  cursor: pointer;
+  border-bottom: 4px solid rgb(192, 9, 9);
+}
+.path button:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: rgb(192, 9, 9);
+  transition: 0.2s ease-in-out;
+}
+.model {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  background-color: rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(8px);
+  display: block;
+}
+.model_inner {
+  width: auto;
+  display: flex;
+  margin: 0px auto;
+  flex-direction: column;
+  align-items: center;
+}
+.model_inner img {
+  width: 20%;
+  height: 20%;
+}
+.model .model_inner button {
+  margin-top: 15px;
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 22px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  width: 10%;
+  cursor: pointer;
+}

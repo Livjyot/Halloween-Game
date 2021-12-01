@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./Images/ghost.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <title>Halloween Game</title>
+</head>
+<body>
+    <div id="holloween_bg">
+        <audio src="sound.mp3" id='play' preload loop style="display: none">
+        </audio>
+        <div class="game_content" id="game_text">
+            <div id='story1'>
+                <h2>you are in a street and there are many houses in the street. But all of them are locked, by walkig you see a garrage and a warehouse</h2>
+                <p id='task1' class='task' onclick='response()'>Enter the garrage</p>
+                <p id='task2' class='task' onclick='response2()'>Enter the warehouse</p>
+                <h2 id="response1">you are in garrage you see many tool to pick and defead the opponent here are the available tool Screwdriver and  hammer.</h2>
+                <p id='task3' class='task' onclick='response3()'>Pick a Screwdriver</p>
+                <p id='task4' class='task' onclick='response4()'>Pick a hammer</p>
+                <h2 id='response2'>you picked the screwdriver and you moved to the inner room of the warehouse here you see Zombie and you attack on Zombie and with the tool you have the screwdriver and by the bad luck Zombie kill you.</h2>
+                <h2 id="response3">Now you are in the warehouse, there is dark in the warehouse and a Zombie is killing the man you kill the Zombie But the man is also becomes the Zombie and you have kill him also.
+                    <br/>You Loose.....
+                </h2>
+                <h2 id="response4">you picked the hamber and left the garrage on the street out of garrage two Zombie are comming toward you and you hit them with the hammer and kill them by hear hear the sound of them more Zombie are comes now you attack on them smartly and
+                    able to kill them Huhhhuuuuu..... You win.</h2>
+            </div>
+            <div id='story2'>
+                <h2>You are seeing many houses in front of you, some are closed and some are open, you, one of them is open on the right side.</h2>
+                <p id='rsTask1' class='task' onclick='resultTwo1()'>Enter from the Door</p>
+                <p id='rsTask2' class='task' onclick='resultTwo2()'>Enter from the kitchen window</p>
+                <h2 id="resultTwo1">You're going inside the house and you see a zombie killed near the stairs, and you go upstairs and go to the room.
+                    and you see that a drawer is visible and on the other side something similar is read on the bed<br/>
+                <br/>   
+                In the drawer you see there is a pistol and a hammer
+                </h2>
+                <p id='rsTask3' class='task' onclick='resultTwo3()'>Pick a pistol and bullets</p>
+                <p id='rsTask4' class='task' onclick='resultTwo4()'>Pick a hammer</p>
+                <h2 id='resultTwo2'>You are going out of the room by picking up the pistol, you hear noise from outside the house and some sound is also coming from the adjoining room.</h2>
+                <p id='rsTask5' class='task' onclick='resultTwo5()'>Leave the house</p>
+                <p id='rsTask6' class='task' onclick='resultTwo6()'>Next room</p>
+                <h2 id='resultTwo3'>You quickly run away, then you see John killing a zombie and seeing you, he points his gun towards you.
+                <br/>
+                You would do something to him that he already shot you.
+                <br/>
+                Dead</h2>
+                <h2 id="resultTwo4">
+                    Before leaving the house, you go to the next room and find Smith looking for something in the drawer and shoot on him
+                    <br/>
+                    You winn......
+                </h2>
+                <h2 id="resultTwo5">You take the hammer and leave the room and go to the kitcken
+                <br/>
+                Everything is scattered in the kitchen and a zombie tiger comes and hits a hammer in his defense and he falls.
+                Now, Rovin will come with gun and shoot on you. Ohhh... you will Die.
+                
+                <br/>
+                </h2>
+                <h2 id="resultTwo6">Now you are in the kitchen and you will abl to see sharp knife and Boxing gloves.</h2>
+                <p id='rsTask7' class='task' onclick='resultTwo7()'>Sharp Knife</p>
+                <p id='rsTask8' class='task' onclick='resultTwo8()'>Boxing Gloves</p>
+
+                <h2 id="resultTwo7">Now you left the kitchen and enter the room here you encounter with Zombe you hit the Zombe with the sharp knife and the
+                floor is filled with blood and finally you killed the Zombie.<br/>
+                One more defendere will come by hear the sound of Zombe killing you will ask him to put his weapon off to him but he
+                will attack on you and shoot on you but you align your body to protect yourself and finally you will saved you live
+                then you hits on him with the sharp knife you have and you will able to kill him
+                <br/> you winnnn.</h2>
+                <h2 id="resultTwo8">Now you picked the gloves and moved to upstairs on the first floor. Now there you herar sound of somthing you feel like
+                    someone is there and you are more concious now. But the main problem is that you have only boxing gloves to attack.
+                    you open the door slowely and attack on Richedfrom his back side and you make a Punch on his head but he is smarter than
+                    you and suddenly sit down and attack on you with Gun Awww.. here you will die.
+                </h2>
+            </div>
+            <div id="story3">
+                <h2 >You are in a strat and there are many houses on the road. But all of them are loacked by walkig you see a garrage and a warehouse </h2>
+                <p id='rs3Task1' class='task' onclick='resultThree1()'>Garrage</p>
+                <p id='rs3Task2' class='task' onclick='resultThree2()'>Warehouse</p>
+
+                
+                <h2 id="resultThree1">You are in Garrage you see many tool to pick and defead the opponent here are the available tool Screwdriver and hammer.</h2>
+                <p id='rs3Task3' class='task' onclick='resultThree3()'>Hammer</p>
+                <p id='rs3Task4' class='task' onclick='resultThree4()'>Screw Driver</p>
+                <h2 id="resultThree2">you picked the screwdriver and you moved to the inner room of the warehouse here you see Zombie and you attack on Zombie and with the tool you ohave the screwdriver and by the bad luck Zombie kill you.</h2>
+                <h2 id="resultThree3">you picked the hammer and left the garrage on the street out of garrage two Zombie are comming toward you and you hit them with the hammer and kill them by hear hear the sound of them more Zombie are comes now you attack on them smartly and
+                    able to kill them Huhhhuuuuu.....
+                    <br/> You win.</h2>
+                
+                <h2 id="resultThree4">Now you are in the warehouse, there is dark in the warehouse and a Zombie is killing the man you kill the Zombie But the man is also becomes the Zombie and you have kill him also.
+                   <br/> You Loose....</h2>
+
+            </div>
+            <div id="story4">
+                <h2>You are at your house and you have to go</h2>
+                <p id='rs4Task1' class='task' onclick='resultFour1()'>Confectionery</p>
+                <p id='rs4Task2' class='task' onclick='resultFour2()'>Shoping mall</p>
+                <h2 id="resultFour2">Now you are at confectionery, and the starts a heavy rain you are seeing the falling rain and enjoying it. And there wall silence all around. Two Zombie come runninng from outside you are looking around you to attack on them on the shopkeeper deskk
+                    you find hockey and pistol.</h2>
+                <h2 id="resultFour1">You are on the way and you hear screaming everywhere, you are quickly going inside the shopping mall
+                You go inside and see that the entire mall is empty, no one is visible around</h2>
+                
+                <p id='rs4Task3' class='task' onclick='resultFour3()'>Hockey</p>
+                <p id='rs4Task4' class='task' onclick='resultFour4()'>Pistol with Bullets</p>
+                
+                <h2 id="resultFour3">You picked hockey, Zombie came toward you he pulled hocked from you and break it attack on you and smashed you.
+                Bad end</h2>
+                <h2 id="resultFour4">You picked the pistol and shoot on Zombie but there is no effect on Zombie now you shoot on forehead of Zombie and able to kill him but in the mean while other Zombie will come and ready to attack on you. But you shoot on him with the 
+                    Pistol you have and you spoof the Zombie and run away to save life.
+                    
+                    <br/>You winnn.... </h2>
+
+                <p id='rs4Task5' class='task' onclick='resultFour5()'>Inside the Shop</p>
+                <p id='rs4Task6' class='task' onclick='resultFour6()'>Leave the Mall</p>
+                <h2 id="resultFour5">You go inside the shops there is a child crying and a zombie is behind the child and  you wanna kill that zombie but you can't find anything
+                   <br/>Then you see that there is an iron rod on the ground, you lift it and hit the zombie's head.
+                   <br/>In the end you save that kid
+                    </h2>
+                <h2 id="resultFour6">Finding them was the easy part. They were on the roof of a hotel building across the street. then comes a shot
+                   <br/> They turn around and take their sniper to the other side of their roof to start the fight. 
+                   <br/> You cross the next roof and jump across it and join the roof. The roof is loose, and the cement falls off. With a cement roof, you fall to the ground below.
+                    <br/><br />You loose
+                </h2>
+            </div>
+        </div>
+        <div class="game_imp">
+            <div class='boy' id="boy_char">
+                <img src="./Images/boy.png" alt="boy">
+            </div>
+            <div class="path" id='chan'>
+                <button class='north' id='arrBtn' onclick='randomTask1()'>North</button>
+                <button class='south' id='arBtn' onclick='randomTask2()'>South</button>
+                <button class='east' id='arBtn' onclick='randomTask3()'>East</button>
+                <button class='west' id='arB' onclick='randomTask4()'>West</button>
+            </div>
+        </div>
+        <div class="model" id='model_box'>
+            <div class="model_inner">
+                <img src="./Images/ghost.png"  alt="model">
+                <button onclick="change()">Start Game</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- javascript file -->
+    <script src="Index.js"></script>
+</body>
+</html>
